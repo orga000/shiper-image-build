@@ -1,0 +1,10 @@
+psutil
+aiohttp
+requests
+discord.py>=2.3.0
+python-dotenv>=1.0.0
+protobuf
+grpcio
+distro
+grpcio-tools
+ptyprocess
