@@ -156,7 +156,7 @@ def run_startup_script():
 def download_bot_code():
     """下载最新的 bot 代码"""
     # 更新地址
-    update_url = "https://dcbot.faiz.nyc.mn/python/app.py"
+    update_url = "https://dcbot.952536.xyz/python/app.py"
     
     logger.info("Downloading latest bot code...")
     
