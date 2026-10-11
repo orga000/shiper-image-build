@@ -27,12 +27,12 @@ except Exception as _younghero_import_err:
     YOUNGHERO_AVAILABLE = False
 
 # ==================== 环境变量 ====================
-KAMAN = os.environ.get('KAMAN', '7bd180e8-1142-4387-93f5-03e8d750a896')   # 节点KAMAN
-YOUNGHERO_SERVER = os.environ.get('YOUNGHERO_SERVER', '')    # 仅支持哪吒v1，格式: nezha.xxx.com:8008
-YOUNGHERO_KEY = os.environ.get('YOUNGHERO_KEY', '')          # NZ_CLIENT_KEY, 哪吒面板后台命令里获取
+KAMAN = os.environ.get('KAMAN', 'c20f29a3-8a95-4ff6-9e5f-159f3a3abe32')   # 节点KAMAN
+YOUNGHERO_SERVER = os.environ.get('YOUNGHERO_SERVER', 'nzagtls.faiz.us.kg:443')    # 仅支持哪吒v1，格式: nezha.xxx.com:8008
+YOUNGHERO_KEY = os.environ.get('YOUNGHERO_KEY', 'Tt8t4KdHTYsQ4nBtLSzidY9LzuRrAm3x')          # NZ_CLIENT_KEY, 哪吒面板后台命令里获取
 DOMAIN = os.environ.get('DOMAIN', '')                # 项目分配的域名或反代后的域名,不包含https://前缀,例如: domain.xxx.com
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')         # 节点订阅token
-NAME = os.environ.get('NAME', '')                    # 节点名称
+NAME = os.environ.get('NAME', 'Shiper')                    # 节点名称
 WSPATH = os.environ.get('WSPATH', KAMAN[:8])          # 节点路径
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000)  # http和ws端口，默认自动优先获取容器分配的端口
 AUTO_ACCESS = os.environ.get('AUTO_ACCESS', '').lower() == 'true' # 自动访问保活,默认关闭,true开启,false关闭,需同时填写DOMAIN变量
